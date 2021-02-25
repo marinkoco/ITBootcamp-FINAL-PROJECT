@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="21684" started-at="2021-02-25T21:35:09 CET" finished-at="2021-02-25T21:35:31 CET">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="21684" started-at="2021-02-25T21:35:09 CET" finished-at="2021-02-25T21:35:31 CET">
+      <class name="tests.TestEditAdminAccount">
+        <test-method status="PASS" signature="createDriver()[pri:0, instance:tests.TestEditAdminAccount@48503868]" name="createDriver" is-config="true" duration-ms="3266" started-at="2021-02-25T21:35:09 CET" finished-at="2021-02-25T21:35:12 CET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createDriver -->
+        <test-method status="PASS" signature="testEditAdmin()[pri:0, instance:tests.TestEditAdminAccount@48503868]" name="testEditAdmin" duration-ms="18289" started-at="2021-02-25T21:35:12 CET" finished-at="2021-02-25T21:35:31 CET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testEditAdmin -->
+      </class> <!-- tests.TestEditAdminAccount -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

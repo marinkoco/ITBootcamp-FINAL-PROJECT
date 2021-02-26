@@ -12,7 +12,7 @@ import objects.Dashboard;
 import objects.Staff;
 
 public class TestAddEmployeePict {
-	
+
 	private static WebDriver driver;
 
 	@BeforeClass
@@ -21,11 +21,11 @@ public class TestAddEmployeePict {
 		driver = new ChromeDriver();
 
 	}
-	
+
 	@Test
 	public void testAddEmployeePict() {
 		driver.manage().window().maximize();
-		driver.navigate().to(Dashboard.DASHBOARD_URL);//ostaje class Dashboard
+		driver.navigate().to(Dashboard.DASHBOARD_URL);
 		Dashboard.loginDashboard(driver);
 		try {
 			Thread.sleep(5000);
@@ -41,14 +41,14 @@ public class TestAddEmployeePict {
 			e.printStackTrace();
 		}
 		Staff.addEmployeePicture(driver);
-		
+
 		try {
 			Thread.sleep(5000);
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		
+
 		Dashboard.clickStaff(driver);
 		try {
 			Thread.sleep(5000);
@@ -56,7 +56,7 @@ public class TestAddEmployeePict {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		
+
 		WebElement name = driver.findElement(By.linkText("Janko Dzimic"));
 		String newname = name.getText();
 

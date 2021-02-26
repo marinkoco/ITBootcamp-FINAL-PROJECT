@@ -17,7 +17,7 @@ public class TestTrialHome {
 		driver = new ChromeDriver();
 
 	}
-	
+
 	@Test
 	public void testTrial() {
 		driver.manage().window().maximize();
@@ -31,8 +31,8 @@ public class TestTrialHome {
 			e.printStackTrace();
 		}
 		HumanityHome.fillTrial2(driver);
+
 		String actual = driver.getCurrentUrl();
-		//String expected = "https://starimport.humanity.com/app/schedule/employee/week/overview/overview/22%2c1%2c2021/";
 		String expected = "https://www.humanity.com/wizard-setup2/";
 		Assert.assertEquals(actual, expected);
 

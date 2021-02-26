@@ -20,7 +20,7 @@ public class TestEditAdminAccount {
 		driver = new ChromeDriver();
 
 	}
-	
+
 	@Test
 	public void testEditAdmin() throws InterruptedException {
 		driver.manage().window().maximize();
@@ -41,11 +41,11 @@ public class TestEditAdminAccount {
 		}
 		Staff.navigateToAdminProfile(driver);
 		Staff.editAdminDetails(driver);
-		
+
 		Thread.sleep(800);
-		
+
 		WebElement confirmation = driver.findElement(By.id("_status"));
 		Assert.assertTrue(confirmation.isDisplayed());
-		
+
 	}
 }

@@ -19,7 +19,7 @@ public class TestSettings {
 		driver = new ChromeDriver();
 
 	}
-	
+
 	@Test
 	public void testSettingsTickerAndLanguage() throws InterruptedException {
 		driver.manage().window().maximize();
@@ -60,12 +60,12 @@ public class TestSettings {
 			e.printStackTrace();
 		}
 		Dashboard.clickSaveSettings(driver);
-		
+
 		Thread.sleep(800);
-		
+
 		WebElement confirmation2 = driver.findElement(By.id("_status"));
 		Assert.assertTrue(confirmation2.isDisplayed());
-		
+
 		Dashboard.selectLanguage(driver);
 		try {
 			Thread.sleep(2000);
@@ -74,12 +74,12 @@ public class TestSettings {
 			e.printStackTrace();
 		}
 		Dashboard.clickSaveSettings(driver);
-		
+
 		Thread.sleep(800);
-		
+
 		WebElement confirmation = driver.findElement(By.id("_status"));
 		Assert.assertTrue(confirmation.isDisplayed());
-			
+
 	}
-	
+
 }

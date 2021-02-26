@@ -17,7 +17,7 @@ public class TestPopupTrial {
 		driver = new ChromeDriver();
 
 	}
-	
+
 	@Test
 	public void testPopupTrial() {
 		driver.manage().window().maximize();
@@ -44,8 +44,8 @@ public class TestPopupTrial {
 			e.printStackTrace();
 		}
 		HumanityHome.fillTrialPopup2(driver);
+		
 		String actual = driver.getCurrentUrl();
-		//String expected = "https://start5.humanity.com/app/schedule/employee/week/overview/overview/22%2c1%2c2021/";
 		String expected = "https://www.humanity.com/wizard-setup2/";
 		Assert.assertEquals(actual, expected);
 	}

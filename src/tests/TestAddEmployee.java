@@ -25,7 +25,7 @@ public class TestAddEmployee {
 	@Test
 	public void testAddEmployee() {
 		driver.manage().window().maximize();
-		driver.navigate().to(Dashboard.DASHBOARD_URL); //ostaje class Dashboard
+		driver.navigate().to(Dashboard.DASHBOARD_URL);
 		Dashboard.loginDashboard(driver);
 		try {
 			Thread.sleep(5000);

@@ -17,7 +17,7 @@ public class Testlogin {
 		driver = new ChromeDriver();
 
 	}
-	
+
 	@Test
 	public void testLogin() {
 		driver.manage().window().maximize();
@@ -33,7 +33,7 @@ public class Testlogin {
 		String actual = driver.getCurrentUrl();
 		String expected = "https://jankotrade.humanity.com/app/dashboard/";
 		Assert.assertEquals(actual, expected);
-		
+
 	}
 
 }

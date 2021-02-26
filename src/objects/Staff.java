@@ -6,11 +6,10 @@ import org.openqa.selenium.WebElement;
 
 public class Staff {
 	
-	//staff
 		public static final String TAB_STAFF_ADD_EMPLOYEES_XPATH = "//*[@id=\"act_primary\"]";
-		private static final String TXT_EMPOLYEE_FNAME_XPATH = "//*[@id=\"_asf1\"]";
-		private static final String TXT_EMPOLYEE_LNAME_XPATH = "//*[@id=\"_asl1\"]";
-		private static final String TXT_EMPOLYEE_EMAIL_XPATH = "//*[@id=\"_ase1\"]";
+		private static final String TXT_EMPLOYEE_FNAME_XPATH = "//*[@id=\"_asf1\"]";
+		private static final String TXT_EMPLOYEE_LNAME_XPATH = "//*[@id=\"_asl1\"]";
+		private static final String TXT_EMPLOYEE_EMAIL_XPATH = "//*[@id=\"_ase1\"]";
 		public static final String BTTN_SAVE_EMPLOYEES_XPATH = "//*[@id=\"_as_save_multiple\"]";
 		
 		private static final String BTTN_EDIT_DETAILS_EMPLOYEE_XPATH = "//*[@id=\"_cd_staff\"]/div[2]/div[2]/div[1]/a[2]";
@@ -21,21 +20,21 @@ public class Staff {
 		
 		private static final String UPLOAD_EMPLOYEE_PICT = "//*[@id=\"fileupload\"]";
 		
-		private static final String TXT_EMPOLYEE_2_FNAME_XPATH = "//*[@id=\"_asf2\"]";
-		private static final String TXT_EMPOLYEE_2_LNAME_XPATH = "//*[@id=\"_asl2\"]";
-		private static final String TXT_EMPOLYEE_2_EMAIL_XPATH = "//*[@id=\"_ase2\"]";
+		private static final String TXT_EMPLOYEE_2_FNAME_XPATH = "//*[@id=\"_asf2\"]";
+		private static final String TXT_EMPLOYEE_2_LNAME_XPATH = "//*[@id=\"_asl2\"]";
+		private static final String TXT_EMPLOYEE_2_EMAIL_XPATH = "//*[@id=\"_ase2\"]";
 		
-		private static final String TXT_EMPOLYEE_3_FNAME_XPATH = "//*[@id=\"_asf3\"]";
-		private static final String TXT_EMPOLYEE_3_LNAME_XPATH = "//*[@id=\"_asl3\"]";
-		private static final String TXT_EMPOLYEE_3_EMAIL_XPATH = "//*[@id=\"_ase3\"]";
+		private static final String TXT_EMPLOYEE_3_FNAME_XPATH = "//*[@id=\"_asf3\"]";
+		private static final String TXT_EMPLOYEE_3_LNAME_XPATH = "//*[@id=\"_asl3\"]";
+		private static final String TXT_EMPLOYEE_3_EMAIL_XPATH = "//*[@id=\"_ase3\"]";
 		
-		private static final String TXT_EMPOLYEE_4_FNAME_XPATH = "//*[@id=\"_asf4\"]";
-		private static final String TXT_EMPOLYEE_4_LNAME_XPATH = "//*[@id=\"_asl4\"]";
-		private static final String TXT_EMPOLYEE_4_EMAIL_XPATH = "//*[@id=\"_ase4\"]";
+		private static final String TXT_EMPLOYEE_4_FNAME_XPATH = "//*[@id=\"_asf4\"]";
+		private static final String TXT_EMPLOYEE_4_LNAME_XPATH = "//*[@id=\"_asl4\"]";
+		private static final String TXT_EMPLOYEE_4_EMAIL_XPATH = "//*[@id=\"_ase4\"]";
 		
-		private static final String TXT_EMPOLYEE_5_FNAME_XPATH = "//*[@id=\"_asf5\"]";
-		private static final String TXT_EMPOLYEE_5_LNAME_XPATH = "//*[@id=\"_asl5\"]";
-		private static final String TXT_EMPOLYEE_5_EMAIL_XPATH = "//*[@id=\"_ase5\"]";
+		private static final String TXT_EMPLOYEE_5_FNAME_XPATH = "//*[@id=\"_asf5\"]";
+		private static final String TXT_EMPLOYEE_5_LNAME_XPATH = "//*[@id=\"_asl5\"]";
+		private static final String TXT_EMPLOYEE_5_EMAIL_XPATH = "//*[@id=\"_ase5\"]";
 		
 		private static final String BTTN_ADMIN_ACCOUNT_EXPAND_XPATH = "//*[@id=\"wrap_us_menu\"]/i";
 		private static final String BTTN_ADMIN_PROFILE_XPATH = "//*[@id=\"userm\"]/div/a[1]";
@@ -53,21 +52,21 @@ public class Staff {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
-			driver.findElement(By.xpath(TXT_EMPOLYEE_FNAME_XPATH)).sendKeys("Minoslav");
+			driver.findElement(By.xpath(TXT_EMPLOYEE_FNAME_XPATH)).sendKeys("Minoslav");
 			try {
 				Thread.sleep(2000);
 			} catch (InterruptedException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
-			driver.findElement(By.xpath(TXT_EMPOLYEE_LNAME_XPATH)).sendKeys("Mamovic");
+			driver.findElement(By.xpath(TXT_EMPLOYEE_LNAME_XPATH)).sendKeys("Mamovic");
 			try {
 				Thread.sleep(2000);
 			} catch (InterruptedException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
-			driver.findElement(By.xpath(TXT_EMPOLYEE_EMAIL_XPATH)).sendKeys("mamovic@bootcamp.com");
+			driver.findElement(By.xpath(TXT_EMPLOYEE_EMAIL_XPATH)).sendKeys("mamovic@bootcamp.com");
 			try {
 				Thread.sleep(2000);
 			} catch (InterruptedException e) {
@@ -153,21 +152,21 @@ public class Staff {
 		}
 		
 		public static void inputEmployee1(WebDriver driver, String fname, String lname, String email) {
-			driver.findElement(By.xpath(TXT_EMPOLYEE_FNAME_XPATH)).sendKeys(fname);
+			driver.findElement(By.xpath(TXT_EMPLOYEE_FNAME_XPATH)).sendKeys(fname);
 			try {
 				Thread.sleep(1000);
 			} catch (InterruptedException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
-			driver.findElement(By.xpath(TXT_EMPOLYEE_LNAME_XPATH)).sendKeys(lname);
+			driver.findElement(By.xpath(TXT_EMPLOYEE_LNAME_XPATH)).sendKeys(lname);
 			try {
 				Thread.sleep(1000);
 			} catch (InterruptedException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
-			driver.findElement(By.xpath(TXT_EMPOLYEE_EMAIL_XPATH)).sendKeys(email);
+			driver.findElement(By.xpath(TXT_EMPLOYEE_EMAIL_XPATH)).sendKeys(email);
 			try {
 				Thread.sleep(1000);
 			} catch (InterruptedException e) {
@@ -177,21 +176,21 @@ public class Staff {
 		}
 		
 		public static void inputEmployee2(WebDriver driver, String fname, String lname, String email) {
-			driver.findElement(By.xpath(TXT_EMPOLYEE_2_FNAME_XPATH)).sendKeys(fname);
+			driver.findElement(By.xpath(TXT_EMPLOYEE_2_FNAME_XPATH)).sendKeys(fname);
 			try {
 				Thread.sleep(1000);
 			} catch (InterruptedException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
-			driver.findElement(By.xpath(TXT_EMPOLYEE_2_LNAME_XPATH)).sendKeys(lname);
+			driver.findElement(By.xpath(TXT_EMPLOYEE_2_LNAME_XPATH)).sendKeys(lname);
 			try {
 				Thread.sleep(1000);
 			} catch (InterruptedException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
-			driver.findElement(By.xpath(TXT_EMPOLYEE_2_EMAIL_XPATH)).sendKeys(email);
+			driver.findElement(By.xpath(TXT_EMPLOYEE_2_EMAIL_XPATH)).sendKeys(email);
 			try {
 				Thread.sleep(1000);
 			} catch (InterruptedException e) {
@@ -201,21 +200,21 @@ public class Staff {
 		}
 		
 		public static void inputEmployee3(WebDriver driver, String fname, String lname, String email) {
-			driver.findElement(By.xpath(TXT_EMPOLYEE_3_FNAME_XPATH)).sendKeys(fname);
+			driver.findElement(By.xpath(TXT_EMPLOYEE_3_FNAME_XPATH)).sendKeys(fname);
 			try {
 				Thread.sleep(1000);
 			} catch (InterruptedException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
-			driver.findElement(By.xpath(TXT_EMPOLYEE_3_LNAME_XPATH)).sendKeys(lname);
+			driver.findElement(By.xpath(TXT_EMPLOYEE_3_LNAME_XPATH)).sendKeys(lname);
 			try {
 				Thread.sleep(1000);
 			} catch (InterruptedException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
-			driver.findElement(By.xpath(TXT_EMPOLYEE_3_EMAIL_XPATH)).sendKeys(email);
+			driver.findElement(By.xpath(TXT_EMPLOYEE_3_EMAIL_XPATH)).sendKeys(email);
 			try {
 				Thread.sleep(1000);
 			} catch (InterruptedException e) {
@@ -225,21 +224,21 @@ public class Staff {
 		}
 		
 		public static void inputEmployee4(WebDriver driver, String fname, String lname, String email) {
-			driver.findElement(By.xpath(TXT_EMPOLYEE_4_FNAME_XPATH)).sendKeys(fname);
+			driver.findElement(By.xpath(TXT_EMPLOYEE_4_FNAME_XPATH)).sendKeys(fname);
 			try {
 				Thread.sleep(1000);
 			} catch (InterruptedException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
-			driver.findElement(By.xpath(TXT_EMPOLYEE_4_LNAME_XPATH)).sendKeys(lname);
+			driver.findElement(By.xpath(TXT_EMPLOYEE_4_LNAME_XPATH)).sendKeys(lname);
 			try {
 				Thread.sleep(1000);
 			} catch (InterruptedException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
-			driver.findElement(By.xpath(TXT_EMPOLYEE_4_EMAIL_XPATH)).sendKeys(email);
+			driver.findElement(By.xpath(TXT_EMPLOYEE_4_EMAIL_XPATH)).sendKeys(email);
 			try {
 				Thread.sleep(1000);
 			} catch (InterruptedException e) {
@@ -249,21 +248,21 @@ public class Staff {
 		}
 		
 		public static void inputEmployee5(WebDriver driver, String fname, String lname, String email) {
-			driver.findElement(By.xpath(TXT_EMPOLYEE_5_FNAME_XPATH)).sendKeys(fname);
+			driver.findElement(By.xpath(TXT_EMPLOYEE_5_FNAME_XPATH)).sendKeys(fname);
 			try {
 				Thread.sleep(1000);
 			} catch (InterruptedException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
-			driver.findElement(By.xpath(TXT_EMPOLYEE_5_LNAME_XPATH)).sendKeys(lname);
+			driver.findElement(By.xpath(TXT_EMPLOYEE_5_LNAME_XPATH)).sendKeys(lname);
 			try {
 				Thread.sleep(1000);
 			} catch (InterruptedException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
-			driver.findElement(By.xpath(TXT_EMPOLYEE_5_EMAIL_XPATH)).sendKeys(email);
+			driver.findElement(By.xpath(TXT_EMPLOYEE_5_EMAIL_XPATH)).sendKeys(email);
 			try {
 				Thread.sleep(1000);
 			} catch (InterruptedException e) {
